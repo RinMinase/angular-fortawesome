@@ -1,7 +1,7 @@
 {
   "name": "@rinminase/ng-fortawesome",
   "homepage": "https://github.com/RinMinase/ng-fortawesome#readme",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "Rin Minase",
   "main": "index.js",
