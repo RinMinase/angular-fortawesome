@@ -1,0 +1,29 @@
+# General
+.env
+coverage/
+
+# compiled output
+dist/
+out-tsc/
+src/assets/res/android/hooks/after_build.js
+src/assets/config/sw-precache-config.js
+
+# IntelliJ IDE storage
+.vscode/*
+
+# Node/NPM/Yarn Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Node/NPM/Yarn cache/storage/lock files
+node_modules/
+package-lock.json
+
+# Firebase cache directory
+.firebase/
+
+# Sonar Linting
+.sonarlint/
