@@ -10,6 +10,9 @@
     "type": "git",
     "url": "git+https://github.com/RinMinase/ng-fortawesome.git"
   },
+  "scripts": {
+    "release": "release-it --ci --no-increment --verbose"
+  },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
