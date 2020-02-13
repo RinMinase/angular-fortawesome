@@ -5,6 +5,7 @@
   "license": "MIT",
   "author": "Rin Minase",
   "main": "index.js",
+  "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RinMinase/ng-fortawesome.git"
