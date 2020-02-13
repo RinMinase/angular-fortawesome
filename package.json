@@ -1,4 +1,5 @@
 {
+  "$schema": "./node_modules/ng-packagr/package.schema.json",
   "name": "@rinminase/ng-fortawesome",
   "homepage": "https://github.com/RinMinase/ng-fortawesome#readme",
   "version": "0.1.0",
@@ -8,5 +9,32 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RinMinase/ng-fortawesome.git"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-brands-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^9.0.1",
+    "@angular/compiler-cli": "^9.0.1",
+    "@angular/core": "^9.0.1",
+    "@types/node": "^13.7.1",
+    "ng-packagr": "^9.0.0",
+    "release-it": "^12.4.3",
+    "rxjs": "^6.5.4",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5",
+    "zone.js": "^0.10.2"
+  },
+  "peerDependencies": {
+    "@angular/core": "^9.0.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/public_api.ts",
+      "flatModuleFile": "angular-fontawesome"
+    },
+    "dest": "./dist/angular-fontawesome"
   }
 }
