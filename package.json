@@ -36,5 +36,24 @@
       "flatModuleFile": "angular-fontawesome"
     },
     "dest": "./dist/angular-fontawesome"
+  },
+  "release-it": {
+    "git": {
+      "addUntrackedFiles": false,
+      "commit": false,
+      "tag": false,
+      "push": false,
+      "requireCleanWorkingDir": false
+    },
+    "github": {
+      "release": false
+    },
+    "npm": {
+      "publish": true,
+      "publishPath": "dist",
+      "publishConfig": {
+        "access": "public"
+      }
+    }
   }
 }
