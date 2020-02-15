@@ -1,0 +1,33 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "strict": true,
+    "strictPropertyInitialization": false,
+    "strictNullChecks": false,
+    "stripInternal": true,
+    "inlineSources": true,
+    "typeRoots": ["node_modules/@types"],
+    "lib": ["dom", "es2018"],
+    "paths": {
+      "@fortawesome/angular-fontawesome": ["dist/angular-fontawesome"],
+      "@fortawesome/angular-fontawesome/testing": ["dist/angular-fontawesome/testing"]
+    }
+  },
+  "angularCompilerOptions": {
+    "enableIvy": false,
+    "skipTemplateCodegen": true,
+    "strictMetadataEmit": true,
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true
+  },
+}
