@@ -3,13 +3,13 @@
   "version": "1.0.1",
   "license": "MIT",
   "author": "Rin Minase",
-  "main": "index.js",
   "private": false,
   "repository": {
     "type": "git",
     "url": "git+https://github.com/RinMinase/ng-fortawesome.git"
   },
   "scripts": {
+    "build": "ng-packagr -p package.json && cp index.d.ts dist/index.d.ts",
     "release": "release-it --ci --no-increment --verbose"
   },
   "dependencies": {
@@ -18,11 +18,37 @@
     "@fortawesome/free-solid-svg-icons": "^5.12.1"
   },
   "devDependencies": {
-    "release-it": "^12.4.3"
+    "@angular-devkit/build-angular": "^0.900.2",
+    "@angular/cli": "^9.0.2",
+    "@angular/common": "^9.0.1",
+    "@angular/compiler": "^9.0.1",
+    "@angular/compiler-cli": "^9.0.1",
+    "@angular/core": "^9.0.1",
+    "@angular/platform-browser": "^9.0.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.27",
+    "@fortawesome/free-regular-svg-icons": "^5.12.1",
+    "@fortawesome/free-solid-svg-icons": "^5.12.1",
+    "ng-packagr": "^9.0.0",
+    "release-it": "^12.4.3",
+    "rxjs": "^6.5.4",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.5",
+    "zone.js": "^0.10.2"
   },
   "peerDependencies": {
-    "@angular/core": "^9.0.0",
-    "@fortawesome/angular-fontawesome": "^0.6.0"
+    "@angular/core": "^9.0.0"
+  },
+  "ngPackage": {
+    "lib": {
+      "entryFile": "src/lib/public_api.ts",
+      "flatModuleFile": "ng-fortawesome"
+    },
+    "dest": "./dist",
+    "whitelistedNonPeerDependencies": [
+      "@fortawesome/fontawesome-svg-core",
+      "@fortawesome/free-brands-svg-icons",
+      "@fortawesome/free-solid-svg-icons"
+    ]
   },
   "release-it": {
     "git": {
@@ -37,6 +63,7 @@
     },
     "npm": {
       "publish": true,
+      "publishPath": "dist",
       "publishConfig": {
         "access": "public"
       }
