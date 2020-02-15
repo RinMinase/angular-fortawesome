@@ -23,6 +23,15 @@ Reduce your project dependencies when using `@fortawesome/angular-fortawesome`.
 
 This library removes `svg-core` as its peer dependency. This also includes imports for `brand` and `solid` icons.
 
+## Versions used
+
+| Task                    | Version  |
+| ----------------------- | -------- |
+| `angular-fortawesome`   | v0.6.0   |
+| `fontawesome-svg-core`  | v1.2.27  |
+| `free-brands-svg-icons` | v5.12.1  |
+| `free-solid-svg-icons`  | v5.12.1  |
+
 ## Usage & Demo
 
 
