@@ -19,5 +19,9 @@ jobs:
           command: yarn install --frozen-lockfile
 
       - run:
+          name: Build library
+          command: yarn build
+
+      - run:
           name: Publishing NPM Package
           command: npm run release
