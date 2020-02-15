@@ -50,7 +50,7 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
   I wanted to do it this way:
 
-  ```npm install @fortawesome/angular-fortawesome @rinminase/ng-fortawesome```
+  ```npm install @rinminase/ng-fortawesome```
 
   Which only adds two dependencies to your project.
 
