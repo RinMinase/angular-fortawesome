@@ -19,7 +19,7 @@
 
 ## Introduction
 
-Reduce your project dependencies when using `@fortawesome/angular-fortawesome`.
+Reduce your project dependencies when using `@fortawesome/angular-fontawesome`.
 
 This library removes `svg-core` as its peer dependency. This also includes imports for `brand` and `solid` icons.
 
@@ -27,7 +27,7 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
 | Task                      | Version  |
 | ------------------------- | -------- |
-| `angular-fortawesome`     | v0.6.0   |
+| `angular-fontawesome`     | v0.6.0   |
 | `fontawesome-svg-core`    | v1.2.27  |
 | `free-brands-svg-icons`   | v5.12.1  |
 | `free-solid-svg-icons`    | v5.12.1  |
@@ -51,21 +51,21 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
 ### Why re-create this library when there is already an existing one?
 
-- The library doesn't seem to remove `svg-core` as its peer dependency, but needs it for both `brands-svg` and `solid-svg`. I seem to see the need to remove the additional library installed for your project and have this library install it instead
+- The existing library doesn't seem to remove `svg-core` as its peer dependency, but needs it for both `brands-svg` and `solid-svg`. I seem to see the need to remove the additional library installed for your project and have this library install it instead
 
   Instead of:
 
-  ```npm install @fortawesome/angular-fortawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons```
+  ```npm install @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons```
 
   I wanted to do it this way:
 
   ```npm install @rinminase/ng-fortawesome```
 
-  Which only adds two dependencies to your project.
+  Which only adds one dependencies to your project.
 
-### Will this library be updated when any of the dependencies updates?
+### Will this library be updated when any of its dependencies updates?
 
-- Yes. This is updated whenever `brands-svg`, `solid-svg` or `svg-core` updates.
+- Yes. This is updated whenever `angular-fontawesome`, `brands-svg`, `solid-svg` or `svg-core` updates.
 
 ## Built with
 * <img width=20 height=20 src="https://babeljs.io/img/favicon.png"> [ES2015 JavaScript](https://babeljs.io/) - Syntax and compiler
