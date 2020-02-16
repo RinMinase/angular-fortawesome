@@ -25,12 +25,12 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
 ## Versions used
 
-| Task                    | Version  |
-| ----------------------- | -------- |
-| `angular-fortawesome`   | v0.6.0   |
-| `fontawesome-svg-core`  | v1.2.27  |
-| `free-brands-svg-icons` | v5.12.1  |
-| `free-solid-svg-icons`  | v5.12.1  |
+| Task                      | Version  |
+| ------------------------- | -------- |
+| `angular-fortawesome`     | v0.6.0   |
+| `fontawesome-svg-core`    | v1.2.27  |
+| `free-brands-svg-icons`   | v5.12.1  |
+| `free-solid-svg-icons`    | v5.12.1  |
 
 ## Usage & Demo
 
