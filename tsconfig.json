@@ -16,11 +16,7 @@
     "stripInternal": true,
     "inlineSources": true,
     "typeRoots": ["node_modules/@types"],
-    "lib": ["dom", "es2018"],
-    "paths": {
-      "@fortawesome/angular-fontawesome": ["dist/angular-fontawesome"],
-      "@fortawesome/angular-fontawesome/testing": ["dist/angular-fontawesome/testing"]
-    }
+    "lib": ["dom", "es2018"]
   },
   "angularCompilerOptions": {
     "enableIvy": false,
