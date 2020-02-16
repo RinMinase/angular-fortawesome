@@ -13,6 +13,7 @@
     "release": "release-it --ci --no-increment --verbose"
   },
   "dependencies": {
+    "@fortawesome/angular-fontawesome": "^0.6.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.27",
     "@fortawesome/free-brands-svg-icons": "^5.12.1",
     "@fortawesome/free-solid-svg-icons": "^5.12.1"
@@ -41,10 +42,17 @@
   "ngPackage": {
     "lib": {
       "entryFile": "src/lib/public_api.ts",
-      "flatModuleFile": "ng-fortawesome"
+      "flatModuleFile": "ng-fortawesome",
+      "umdModuleIds": {
+        "@fortawesome/angular-fontawesome": "@fortawesome/angular-fontawesome",
+        "@fortawesome/fontawesome-svg-core": "@fortawesome/fontawesome-svg-core",
+        "@fortawesome/free-brands-svg-icons": "@fortawesome/free-brands-svg-icons",
+        "@fortawesome/free-solid-svg-icons": "@fortawesome/free-solid-svg-icons"
+      }
     },
     "dest": "./dist",
     "whitelistedNonPeerDependencies": [
+      "@fortawesome/angular-fontawesome",
       "@fortawesome/fontawesome-svg-core",
       "@fortawesome/free-brands-svg-icons",
       "@fortawesome/free-solid-svg-icons"
