@@ -68,7 +68,8 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 - Yes. This is updated whenever `angular-fontawesome`, `brands-svg`, `solid-svg` or `svg-core` updates.
 
 ## Built with
-* <img width=20 height=20 src="https://babeljs.io/img/favicon.png"> [ES2015 JavaScript](https://babeljs.io/) - Syntax and compiler
+* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 9](https://angular.io/) - Library setup
+* <img width=20 height=20 src="https://www.typescriptlang.org/assets/images/icons/favicon-32x32.png"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
 * <img width=20 height=20 src="https://nodejs.org/static/images/favicons/favicon-32x32.png"> [NodeJS](https://nodejs.org/) - Environment
 * <img width=20 height=20 src="https://dmmj3mmt94rvw.cloudfront.net/favicon-undefined.ico"> [Circle CI](https://circleci.com/) - Continuous Integration (CI) service
 * <img width=20 height=20 src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LGsE7zdvzHI5cG-XV6p%2Favatar.png?alt=media"> [Semantic Release📦🚀](https://semantic-release.gitbook.io/) - Releasing strategy
