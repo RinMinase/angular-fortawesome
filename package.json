@@ -69,7 +69,9 @@
       "requireCleanWorkingDir": false
     },
     "github": {
-      "release": false
+      "release": true,
+      "releaseName": "${version}",
+      "assets": "ng-fortawesome-*-dist.zip"
     },
     "npm": {
       "publish": true,
