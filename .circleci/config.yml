@@ -8,6 +8,10 @@ jobs:
       only:
         - master
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "42:02:6c:d0:4a:45:af:b8:da:a8:b1:0e:dc:25:d1:2c"
+      
       - checkout
 
       - run:
