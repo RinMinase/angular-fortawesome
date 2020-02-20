@@ -4,6 +4,8 @@ coverage/
 
 # compiled output
 dist/
+/dist*.zip
+/ng-fortawesome-*-dist.zip
 out-tsc/
 src/assets/res/android/hooks/after_build.js
 src/assets/config/sw-precache-config.js
