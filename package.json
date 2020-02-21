@@ -1,6 +1,6 @@
 {
   "name": "@rinminase/ng-fortawesome",
-  "version": "4.0.1",
+  "version": "4.0.0",
   "license": "MIT",
   "author": "Rin Minase",
   "private": false,
@@ -74,7 +74,7 @@
     "github": {
       "release": true,
       "releaseName": "${version}",
-      "assets": "*.zip"
+      "assets": "ng-fortawesome-*-dist.zip"
     },
     "npm": {
       "publish": true,
