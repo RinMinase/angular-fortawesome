@@ -21,16 +21,17 @@
 
 Reduce your project dependencies when using `@fortawesome/angular-fontawesome`.
 
-This library removes `svg-core` as its peer dependency. This also includes imports for `brand` and `solid` icons.
+This library removes `svg-core` as its peer dependency. This also includes imports for `brand`, `regular` and `solid` icons.
 
 ## Versions used
 
-| Task                      | Version  |
-| ------------------------- | -------- |
-| `angular-fontawesome`     | v0.6.0   |
-| `fontawesome-svg-core`    | v1.2.27  |
-| `free-brands-svg-icons`   | v5.12.1  |
-| `free-solid-svg-icons`    | v5.12.1  |
+| Dependencies              | Version  |  Import Shorthand  |
+| ------------------------- | -------- | ------------------ |
+| `angular-fontawesome`     | v0.6.0   |                    |
+| `fontawesome-svg-core`    | v1.2.27  |                    |
+| `free-brands-svg-icons`   | v5.12.1  |     fab<Icon>      |
+| `free-regular-svg-icons`  | v5.12.1  |     fa<Icon>       |
+| `free-solid-svg-icons`    | v5.12.1  |     fas<Icon>      |
 
 ## Usage & Demo
 
@@ -39,23 +40,56 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
 1. You can install ***ng-fortawesome*** using npm
 
-  ```bash
-  npm install @rinminase/ng-fortawesome
+    ```bash
+    npm install @rinminase/ng-fortawesome
+    ```
+
+2. Add it on your module, like so
+
+    ```typescript
+    import { FontAwesomeModule } from "@rinminase/ng-fortawesome";
+
+    @NgModule({
+      imports: [
+        ...,
+        FontAwesomeModule,
+      ]
+    })
+    ```
+
+3. Declare it in your component, like so
+
+  ```typescript
+  import { fasPlus, faEdit, fabGithub } from "@rinminase/ng-fortawesome";
+
+  export class SomeComponent implements OnInit {
+    fasPlus = fasPlus;
+    faEdit = faEdit;
+    fabGithub = fabGithub;
+
+    onInit() {
+        ...
+    }
+  }
   ```
 
-## API
+4. Use it on your template, like so
 
-### Import
+  ```html
+  <fa-icon [icon]="fasPlus"></fa-icon>
+  <fa-icon [icon]="faEdit"></fa-icon>
+  <fa-icon [icon]="fabGithub"></fa-icon>
+  ```
 
 ## FAQ
 
 ### Why re-create this library when there is already an existing one?
 
-- The existing library doesn't seem to remove `svg-core` as its peer dependency, but needs it for both `brands-svg` and `solid-svg`. I seem to see the need to remove the additional library installed for your project and have this library install it instead
+- The existing library doesn't seem to remove `svg-core` as its peer dependency, but needs it for both `brands-svg`, `regular-svg` and `solid-svg`. I seem to see the need to remove the additional library installed for your project and have this library install it instead
 
   Instead of:
 
-  ```npm install @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-solid-svg-icons```
+  ```npm install @fortawesome/angular-fontawesome @fortawesome/fontawesome-svg-core @fortawesome/free-brands-svg-icons @fortawesome/free-regular-svg-icons @fortawesome/free-solid-svg-icons```
 
   I wanted to do it this way:
 
@@ -65,7 +99,7 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
 ### Will this library be updated when any of its dependencies updates?
 
-- Yes. This is updated whenever `angular-fontawesome`, `brands-svg`, `solid-svg` or `svg-core` updates.
+- Yes. This is updated whenever `angular-fontawesome`, `brands-svg`, `regular-svg`, `solid-svg` or `svg-core` updates.
 
 ## Built with
 * <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 9](https://angular.io/) - Library setup
