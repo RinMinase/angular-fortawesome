@@ -9,6 +9,15 @@
     "type": "git",
     "url": "git+https://github.com/RinMinase/ng-fortawesome.git"
   },
+  "keywords": [
+    "fontawesome",
+    "fortawesome",
+    "angular",
+    "font",
+    "awesome",
+    "icon",
+    "svg"
+  ],
   "scripts": {
     "build": "ng-packagr -p package.json && cp index.d.ts dist/index.d.ts",
     "export": "bash ./create-api.sh && bash ./create-export.sh",
