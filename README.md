@@ -59,33 +59,33 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
 3. Declare it in your component, like so
 
-  ```typescript
-  import { fasPlus, faEdit, fabGithub } from "@rinminase/ng-fortawesome";
+    ```typescript
+    import { fasPlus, faEdit, fabGithub } from "@rinminase/ng-fortawesome";
 
-  export class SomeComponent implements OnInit {
-    fasPlus = fasPlus;
-    faEdit = faEdit;
-    fabGithub = fabGithub;
+    export class SomeComponent implements OnInit {
+      fasPlus = fasPlus;
+      faEdit = faEdit;
+      fabGithub = fabGithub;
 
-    onInit() {
-        ...
+      onInit() {
+          ...
+      }
     }
-  }
-  ```
+    ```
 
 4. Use it on your template, like so
 
-  ```html
-  <fa-icon [icon]="fasPlus"></fa-icon>
-  <fa-icon [icon]="faEdit"></fa-icon>
-  <fa-icon [icon]="fabGithub"></fa-icon>
-  ```
+    ```html
+    <fa-icon [icon]="fasPlus"></fa-icon>
+    <fa-icon [icon]="faEdit"></fa-icon>
+    <fa-icon [icon]="fabGithub"></fa-icon>
+    ```
 
 ## FAQ
 
 ### Why re-create this library when there is already an existing one?
 
-- The existing library doesn't seem to remove `svg-core` as its peer dependency, but needs it for both `brands-svg`, `regular-svg` and `solid-svg`. I seem to see the need to remove the additional library installed for your project and have this library install it instead
+- The existing library doesn't seem to remove `svg-core` as its peer dependency, but needs it for both `brands-svg`, `regular-svg` and `solid-svg`. I seem to see the need to remove the additional library installed for your project and have this library install it instead. This library aims to reduce the number of dependencies listed in your package file.
 
   Instead of:
 
@@ -95,7 +95,7 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
   ```npm install @rinminase/ng-fortawesome```
 
-  Which only adds one dependencies to your project.
+  Which only adds one dependency in your project depencies instead of five.
 
 ### Will this library be updated when any of its dependencies updates?
 
