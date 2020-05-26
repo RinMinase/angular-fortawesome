@@ -13,7 +13,7 @@
         <img alt="Bundle-Phobia" src="https://img.shields.io/bundlephobia/minzip/@rinminase/ng-fortawesome?logo=webpack&logoColor=white&style=for-the-badge">
     </a>&nbsp;
     <a href="https://www.npmjs.com/package/@rinminase/ng-fortawesome">
-        <img alt="NPM-DM" src="https://img.shields.io/npm/dw/@rinminase/ng-fortawesome?logo=npm&style=for-the-badge">
+        <img alt="NPM-DM" src="https://img.shields.io/npm/dm/@rinminase/ng-fortawesome?logo=npm&style=for-the-badge">
     </a>
 </p>
 
