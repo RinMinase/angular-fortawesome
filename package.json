@@ -49,7 +49,7 @@
     "zone.js": "^0.10.3"
   },
   "peerDependencies": {
-    "@angular/core": "^9.0.0"
+    "@angular/core": ">= 9.0.0"
   },
   "ngPackage": {
     "lib": {
