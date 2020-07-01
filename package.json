@@ -1,7 +1,7 @@
 {
   "name": "@rinminase/ng-fortawesome",
   "description": "Reduce your project dependencies when using @fortawesome/angular-fortawesome.",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "license": "MIT",
   "author": "Rin Minase",
   "private": false,
