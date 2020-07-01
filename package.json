@@ -22,7 +22,7 @@
     "build": "ng-packagr -p package.json && cp index.d.ts dist/index.d.ts",
     "export": "bash ./create-api.sh && bash ./create-export.sh",
     "release": "release-it --ci --no-increment --verbose || true",
-    "zip": "bestzip dist.zip dist/ && npm run zip:post",
+    "zip": "rm -f *.zip && bestzip dist.zip dist/ && npm run zip:post",
     "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-fortawesome-'+process.env.npm_package_version+'-dist.zip', ()=>{})\""
   },
   "dependencies": {
