@@ -23,7 +23,8 @@
     "export": "bash ./create-api.sh && bash ./create-export.sh",
     "release": "release-it --ci --no-increment --verbose || true",
     "zip": "rm -f *.zip && bestzip dist.zip dist/ && npm run zip:post",
-    "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-fortawesome-'+process.env.npm_package_version+'-dist.zip', ()=>{})\""
+    "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-fortawesome-'+process.env.npm_package_version+'-dist.zip', ()=>{})\"",
+    "logs": "auto-changelog"
   },
   "dependencies": {
     "@fortawesome/angular-fontawesome": "^0.7.0",
@@ -51,6 +52,13 @@
   },
   "peerDependencies": {
     "@angular/core": "^9.0.0 || ^10.0.0"
+  },
+  "auto-changelog": {
+    "template": "keepachangelog",
+    "package": true,
+    "unreleasedOnly": true,
+    "commitLimit": 15,
+    "backfillLimit": 15
   },
   "ngPackage": {
     "lib": {
