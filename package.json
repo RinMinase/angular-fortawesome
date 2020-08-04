@@ -41,7 +41,7 @@
     "@angular/core": "^10.0.7",
     "@angular/platform-browser": "^10.0.7",
     "auto-changelog": "^2.2.0",
-    "bestzip": "^2.1.5",
+    "bestzip": "^2.1.6",
     "ng-packagr": "^10.0.3",
     "release-it": "^13.6.5",
     "rxjs": "^6.6.2",
