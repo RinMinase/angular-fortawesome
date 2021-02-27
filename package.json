@@ -22,7 +22,6 @@
     "build": "ng-packagr -p package.json && cp index.d.ts dist/index.d.ts",
     "export": "bash ./create-api.sh && bash ./create-export.sh",
     "release": "release-it --ci --no-increment --verbose || true",
-    "rt": "release-it --ci --no-increment --verbose --github.release --github.assets='ng-fortawesome-5.3.3-dist.zip'",
     "zip": "rm -f *.zip && bestzip dist.zip dist/ && npm run zip:post",
     "zip:post": "ts-node -e \"require('fs').rename('dist.zip', 'ng-fortawesome-'+process.env.npm_package_version+'-dist.zip', ()=>{})\"",
     "logs": "auto-changelog"
@@ -83,8 +82,20 @@
     ]
   },
   "release-it": {
+    "git": {
+      "addUntrackedFiles": false,
+      "commit": false,
+      "tag": false,
+      "push": false,
+      "requireCleanWorkingDir": false
+    },
+    "github": {
+      "release": false,
+      "releaseName": "${version}",
+      "assets": "ng-fortawesome-*-dist.zip"
+    },
     "npm": {
-      "publish": false,
+      "publish": true,
       "publishPath": "dist",
       "publishConfig": {
         "access": "public"
