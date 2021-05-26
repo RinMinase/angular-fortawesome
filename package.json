@@ -76,7 +76,7 @@
       }
     },
     "dest": "./dist",
-    "whitelistedNonPeerDependencies": [
+    "allowedNonPeerDependencies": [
       "@fortawesome/angular-fontawesome",
       "@fortawesome/fontawesome-svg-core",
       "@fortawesome/free-brands-svg-icons",
