@@ -27,11 +27,11 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 
 | Dependencies              | Version  |  Import Shorthand  |
 | ------------------------- | -------- | ------------------ |
-| `angular-fontawesome`     | v0.6.0   |                    |
-| `fontawesome-svg-core`    | v1.2.27  |                    |
-| `free-brands-svg-icons`   | v5.12.1  |     fab<Icon>      |
-| `free-regular-svg-icons`  | v5.12.1  |     fa<Icon>       |
-| `free-solid-svg-icons`    | v5.12.1  |     fas<Icon>      |
+| `angular-fontawesome`     | v0.9.0   |                    |
+| `fontawesome-svg-core`    | v1.2.35  |                    |
+| `free-brands-svg-icons`   | v5.15.3  |     fab<Icon>      |
+| `free-regular-svg-icons`  | v5.15.3  |     fa<Icon>       |
+| `free-solid-svg-icons`    | v5.15.3  |     fas<Icon>      |
 
 ## Usage & Demo
 
@@ -102,8 +102,8 @@ This library removes `svg-core` as its peer dependency. This also includes impor
 - Yes. This is updated whenever `angular-fontawesome`, `brands-svg`, `regular-svg`, `solid-svg` or `svg-core` updates.
 
 ## Built with
-* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 9](https://angular.io/) - Library setup
-* <img width=20 height=20 src="https://www.typescriptlang.org/assets/images/icons/favicon.ico"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
+* <img width=20 height=20 src="https://angular.io/assets/images/favicons/favicon.ico"> [Angular 12](https://angular.io/) - Library setup
+* <img width=20 height=20 src="https://www.typescriptlang.org/favicon-32x32.png"> [TypeScript](https://www.typescriptlang.org/) - Language syntax
 * <img width=20 height=20 src="https://nodejs.org/static/images/favicons/favicon-32x32.png"> [NodeJS](https://nodejs.org/) - Environment
 * <img width=20 height=20 src="https://dmmj3mmt94rvw.cloudfront.net/favicon-undefined.ico"> [Circle CI](https://circleci.com/) - Continuous Integration (CI) service
 * <img width=20 height=20 src="https://blobscdn.gitbook.com/v0/b/gitbook-28427.appspot.com/o/spaces%2F-LGsE7zdvzHI5cG-XV6p%2Favatar.png?alt=media"> [Semantic Release📦🚀](https://semantic-release.gitbook.io/) - Releasing strategy
