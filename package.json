@@ -41,7 +41,7 @@
     "@angular/compiler-cli": "^12.2.1",
     "@angular/core": "^12.2.1",
     "@angular/platform-browser": "^12.2.1",
-    "@types/node": "^15.6.1",
+    "@types/node": "^16.6.0",
     "auto-changelog": "^2.3.0",
     "bestzip": "^2.2.0",
     "ng-packagr": "^12.2.0",
