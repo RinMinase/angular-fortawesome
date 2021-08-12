@@ -1555,7 +1555,6 @@ export {
     faTiktok as fabTiktok,
     faTradeFederation as fabTradeFederation,
     faTrello as fabTrello,
-    faTripadvisor as fabTripadvisor,
     faTumblr as fabTumblr,
     faTumblrSquare as fabTumblrSquare,
     faTwitch as fabTwitch,
