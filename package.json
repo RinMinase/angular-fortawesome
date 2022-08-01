@@ -28,11 +28,11 @@
     "logs:post": "sed -i \"/auto-changelog-above/,+1 d;10i <!-- auto-changelog-above -->\\n\" CHANGELOG.md"
   },
   "dependencies": {
-    "@fortawesome/angular-fontawesome": "^0.9.0",
-    "@fortawesome/fontawesome-svg-core": "^1.2.36",
-    "@fortawesome/free-brands-svg-icons": "^5.15.4",
-    "@fortawesome/free-regular-svg-icons": "^5.15.4",
-    "@fortawesome/free-solid-svg-icons": "^5.15.4"
+    "@fortawesome/angular-fontawesome": "^0.11.1",
+    "@fortawesome/fontawesome-svg-core": "^6.1.2",
+    "@fortawesome/free-brands-svg-icons": "^6.1.2",
+    "@fortawesome/free-regular-svg-icons": "^6.1.2",
+    "@fortawesome/free-solid-svg-icons": "^6.1.2"
   },
   "devDependencies": {
     "@angular/cli": "^12.2.1",
