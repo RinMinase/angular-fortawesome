@@ -35,23 +35,23 @@
     "@fortawesome/free-solid-svg-icons": "^6.1.2"
   },
   "devDependencies": {
-    "@angular/cli": "^13.3.0",
-    "@angular/common": "^13.3.0",
-    "@angular/compiler": "^13.3.0",
-    "@angular/compiler-cli": "^13.3.0",
-    "@angular/core": "^13.3.0",
-    "@angular/platform-browser": "^13.3.0",
+    "@angular/cli": "^14.1.0",
+    "@angular/common": "^14.1.0",
+    "@angular/compiler": "^14.1.0",
+    "@angular/compiler-cli": "^14.1.0",
+    "@angular/core": "^14.1.0",
+    "@angular/platform-browser": "^14.1.0",
     "@types/node": "^18.6.3",
     "auto-changelog": "^2.4.0",
     "bestzip": "^2.2.1",
-    "ng-packagr": "^13.3.1",
+    "ng-packagr": "^14.1.0",
     "postcss": "8.4.14",
     "release-it": "^15.2.0",
     "rxjs": "^7.4.0",
     "ts-node": "^10.9.1",
     "tslib": "^2.4.0",
-    "typescript": "~4.6.0",
-    "zone.js": "^0.11.4"
+    "typescript": "~4.7.4",
+    "zone.js": "^0.11.7"
   },
   "peerDependencies": {
     "@angular/core": ">=9.0.0"
